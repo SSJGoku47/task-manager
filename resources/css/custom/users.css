@@ -1,0 +1,63 @@
+/* users.css */
+
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles within the base layer */
+@layer base {
+}
+
+/* Custom styles within the components layer */
+@layer components {
+
+  .p-datatable-header,
+  .p-paginator-bottom,
+  .p-datatable-tfoot,
+  td,
+  tr,
+  th,
+  thead,
+  .p-datatable header {
+    @apply bg-[var(--bg-color-1)] text-[var(--bg-text-1)];
+  }
+
+  /* Styling for datatable scrollbar */
+  .p-datatable {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-color-1) var(--scrollbar-track);
+  }
+
+  /* Styling for paginator */
+  .p-paginator {
+    @apply bg-[var(--bg-color-1)] text-[var(--bg-text-1)];
+  }
+
+  .p-column-filter-overlay,.p-dropdown,.p-dropdown-items-wrapper,.p-multiselect-panel{
+    @apply bg-[var(--bg-color-1)] text-[var(--bg-text-1)] text-sm;
+  }
+
+  .p-dropdown-label,.p-multiselect-label{
+    @apply text-sm;
+  }
+
+  .p-dropdown-items-wrapper,.p-multiselect-panel{
+    @apply text-[var(--bg-text-1)];
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-color-1) var(--scrollbar-track);
+  }
+
+  .p-checkbox,.p-checkbox-box{
+    @apply border-zinc-500  bg-[var(--checkbox-bg)] text-[var(--checkbox-text)] rounded-sm;
+  }
+
+  .p-checkbox svg{
+    @apply text-[var(--checkbox-text)]
+  }
+}
+
+/* Custom styles within the utilities layer */
+@layer utilities {
+}

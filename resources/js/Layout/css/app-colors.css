@@ -1,0 +1,355 @@
+:root {
+  /* Buttons */
+
+  --button-bg-1: #007bff;
+  --button-text-1: #ffffff;
+  --button-border-1: #007bff;
+
+  --button-bg-2: #28a745;
+  --button-text-2: #0a0a0a;
+  --button-border-2: #28a745;
+
+  --button-bg-3: #ffc107;
+  --button-text-3: #ffffff;
+  --button-border-3: #ffc107;
+
+
+  /* Scrollbar */
+
+  --scrollbar-track: #b3b2b1;
+  --scrollbar-thumb: white;
+  --scrollbar-border: #b3b2b1;
+
+
+  /* Borders */
+
+  --border-color-1: #007bff;
+  --border-color-2: #28a745;
+  --border-color-3: #ffc107;
+
+
+  /* Icons */
+
+  --icon-color-1: #050505;
+  --icon-color-2: #28a745;
+  --icon-color-3: #ffc107;
+
+  --icon-text : #ffffff;
+  --icon-border :  #007bff;
+
+
+  /* Fonts */
+
+  --font-family: 'Arial, sans-serif';
+  --font-size-base: 16px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --text-color-1: #000000;
+  --text-color-2: #ffffff;
+
+
+  /* Links */
+
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
+  --link-active-color: #004085;
+  --link-visited-color: #6f42c1;
+
+
+  /* Headings */
+
+  --heading-color-1: #000000;
+  --heading-color-2: #ffffff;
+
+
+  /* Paragraphs */
+
+  --paragraph-color-1: #000000;
+  --paragraph-color-2: #ffffff;
+
+
+  /* Backgrounds */
+
+  --bg-color-1: #ffffff;
+  --bg-color-2: #000000;
+  --bg-color-3: #eacbf0;
+  --bg-text-1: #000000;
+  --bg-text-2: #fdfdfd;
+  --bg-primary-main: #f5dddd;
+
+
+  /* Forms */
+
+  --input-bg: #ffffff;
+  --input-border: #ced4da;
+  --input-text: #495057;
+  --input-focus-bg: #ffffff;
+  --input-focus-border: #80bdff;
+  --input-focus-text: #495057;
+
+
+  /* Containers */
+
+  --container-bg: #ffffff;
+  --container-border: #ced4da;
+  --container-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+
+  /* Navbars */
+
+  --navbar-bg: #343a40;
+  --navbar-text: #ffffff;
+  --navbar-link: #ffffff;
+  --navbar-link-hover: #f8f9fa;
+  --navbar-link-active: #e9ecef;
+
+
+  /* Footers */
+
+  --footer-bg: #343a40;
+  --footer-text: #ffffff;
+  --footer-link: #ffffff;
+  --footer-link-hover: #f8f9fa;
+
+
+  /* Modals */
+
+  --modal-bg: #ffffff;
+  --modal-border: #ced4da;
+  --modal-header-bg: #f8f9fa;
+  --modal-footer-bg: #f8f9fa;
+
+
+  /* Tables */
+
+  --table-header-bg: #343a40;
+  --table-header-text: #ffffff;
+  --table-row-bg: #ffffff;
+  --table-row-text: #000000;
+  --table-border: #ced4da;
+
+
+  /* Alerts */
+
+  --alert-bg: #f8f9fa;
+  --alert-border: #ced4da;
+  --alert-text: #000000;
+  --alert-icon: #007bff;
+
+
+  /* Badges */
+
+  --badge-bg: #007bff;
+  --badge-text: #ffffff;
+  --badge-border: #007bff;
+
+  /* Tooltips */
+
+  --tooltip-bg: #343a40;
+  --tooltip-text: #ffffff;
+  --tooltip-border: #343a40;
+
+
+  /* Progress Bars */
+
+  --progress-bg: #e9ecef;
+  --progress-fill: #007bff;
+  --progress-text: #ffffff;
+
+
+  /* Breadcrumbs */
+
+  --breadcrumb-bg: #f8f9fa;
+  --breadcrumb-text: #007bff;
+  --breadcrumb-link: #007bff;
+  --breadcrumb-separator: #6c757d;
+
+  /* checkbox */
+  --checkbox-bg :#d1d1d1;
+  --checkbox-text :#000000;
+  --checkbox-border :#c0c0c0;
+}
+
+/* Dark Theme */
+
+.dark {
+
+  /* Buttons */
+
+  --button-bg-1: #070707; 
+  --button-text-1: #eceaea;
+  --button-border-1: #343a40;
+
+  --button-bg-2: #6c757d;
+  --button-text-2: #000000;
+  --button-border-2: #6c757d;
+
+  --button-bg-3: #adb5bd;
+  --button-text-3: #343a40;
+  --button-border-3: #adb5bd;
+
+
+
+  /* Scrollbar */
+
+  --scrollbar-track: #5c5c5c;
+  --scrollbar-thumb: white;
+  --scrollbar-border: #5c5c5c;
+
+
+
+  /* Borders */
+
+  --border-color-1: #343a40;
+  --border-color-2: #6c757d;
+  --border-color-3: #adb5bd;
+
+
+
+  /* Icons */
+
+  --icon-color-1: #007bff;
+  --icon-color-2: #6c757d;
+  --icon-color-3: #adb5bd;
+
+  --icon-text : #ffffff;
+  --icon-border :  #6c757d;
+
+
+
+  /* Fonts */
+
+  --font-family: 'Arial, sans-serif';
+  --font-size-base: 16px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --text-color-1: #ffffff;
+  --text-color-2: #000000;
+
+
+
+  /* Links */
+
+  --link-color: #343a40;
+  --link-hover-color: #6c757d;
+  --link-active-color: #adb5bd;
+  --link-visited-color: #6f42c1;
+
+
+  /* Headings */
+
+  --heading-color-1: #ffffff;
+  --heading-color-2: #000000;
+
+
+  /* Paragraphs */
+
+  --paragraph-color-1: #ffffff;
+  --paragraph-color-2: #000000;
+
+
+
+  /* Backgrounds */
+
+  --bg-color-1: #000000;
+  --bg-color-2: #ffffff;
+  --bg-color-3: #eacbf0;
+  --bg-text-1: #ffffff;
+  --bg-text-2: #000000;
+  --bg-primary-main: #5c5c5c;
+
+
+  /* Forms */
+
+  --input-bg: #ffffff;
+  --input-border: #ced4da;
+  --input-text: #495057;
+  --input-focus-bg: #ffffff;
+  --input-focus-border: #80bdff;
+  --input-focus-text: #495057;
+
+
+  /* Containers */
+
+  --container-bg: #ffffff;
+  --container-border: #ced4da;
+  --container-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+
+  /* Navbars */
+
+  --navbar-bg: #343a40;
+  --navbar-text: #ffffff;
+  --navbar-link: #ffffff;
+  --navbar-link-hover: #f8f9fa;
+  --navbar-link-active: #e9ecef;
+
+
+  /* Footers */
+
+  --footer-bg: #343a40;
+  --footer-text: #ffffff;
+  --footer-link: #ffffff;
+  --footer-link-hover: #f8f9fa;
+
+
+  /* Modals */
+
+  --modal-bg: #ffffff;
+  --modal-border: #ced4da;
+  --modal-header-bg: #f8f9fa;
+  --modal-footer-bg: #f8f9fa;
+
+
+  /* Tables */
+
+  --table-header-bg: #343a40;
+  --table-header-text: #ffffff;
+  --table-row-bg: #ffffff;
+  --table-row-text: #000000;
+  --table-border: #ced4da;
+
+
+  /* Alerts */
+
+  --alert-bg: #f8f9fa;
+  --alert-border: #ced4da;
+  --alert-text: #000000;
+  --alert-icon: #007bff;
+
+
+  /* Badges */
+
+  --badge-bg: #007bff;
+  --badge-text: #ffffff;
+  --badge-border: #007bff;
+
+
+  /* Tooltips */
+
+  --tooltip-bg: #343a40;
+  --tooltip-text: #ffffff;
+  --tooltip-border: #343a40;
+
+
+  /* Progress Bars */
+
+  --progress-bg: #e9ecef;
+  --progress-fill: #007bff;
+  --progress-text: #ffffff;
+
+
+  /* Breadcrumbs */
+
+  --breadcrumb-bg: #f8f9fa;
+  --breadcrumb-text: #007bff;
+  --breadcrumb-link: #007bff;
+  --breadcrumb-separator: #6c757d;
+
+  /* checkbox */
+
+  --checkbox-bg :#746d6d;
+  --checkbox-text :#fdfdfd;
+  --checkbox-border :#bbb8b8;
+
+}

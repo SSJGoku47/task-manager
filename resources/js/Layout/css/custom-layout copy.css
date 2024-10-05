@@ -1,0 +1,101 @@
+/* custom-layout.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* css styles for layout and it's components    */ 
+
+
+/* Custom styles within the base layer */                               
+@layer base {                                                             /* AppLayout    */
+  html, body, #app, .page-wrapper .container-fluid {                   
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  header {
+    height: calc(100vh - 4rem); 
+    transition: width 0.3s;
+  }
+
+  .page-wrapper .container-fluid {
+    @apply pr-[5px];
+    max-width: 100%;
+  }
+}
+
+/* Custom styles within the components layer */
+@layer components {
+  .page-main-header {
+    @apply fixed top-0 z-10 w-full text-lg bg-white shadow-sm;
+  }
+
+  .page-body-wrapper {
+    @apply flex lg:mt-5;
+  }
+
+  .page-wrapper{
+    @apply bg-violet-200;
+    /* background-color: papayawhip; */
+  }
+
+  .main-nav {
+    @apply fixed w-full  top-16  h-[calc(100vh-4rem)] lg:top-20;
+    z-index: 8;
+    transition: width 0.3s;
+  }
+
+  .nav-visible {
+    @apply w-60 lg:w-48;
+    width: 100%;
+  }
+
+  .nav-hide {
+    @apply w-0;
+  }
+
+  .page-body {
+    @apply flex-1 py-4 pl-4 mt-14 overflow-y-auto overflow-x-hidden transition-all;
+    transition-property: margin-left;
+    transition-duration: 0.3s;
+  }
+
+  .page-body-sidebar-visible {
+    @apply ml-60 lg:ml-52;
+    z-index: 8;
+  }
+
+  .page-body-sidebar-hide {
+    @apply ml-0;
+  }
+
+  .container-fluid {
+    @apply relative rounded-md max-w-full min-w-full mx-auto;
+  }
+
+  .content-header{
+    @apply w-full ;
+  }
+
+
+
+  /* AppSidebar    */
+
+  .sidebar {
+    @apply relative overflow-x-auto top-[11px] left-0 h-[calc(100%-30px)] w-[217px] z-10;
+  }
+
+  /* AppTopbar    */
+
+  .toggle-button {                                                             /* toggle sidebar button at topbar */
+    @apply bg-transparent border-none cursor-pointer text-2xl;
+  }
+  
+  .top-bar{
+    @apply bg-white;
+  }
+  
+}

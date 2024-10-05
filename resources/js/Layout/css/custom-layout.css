@@ -1,0 +1,139 @@
+/* custom-layout.css */
+
+@import 'app-colors.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom styles within the base layer */                               
+@layer base {                                                            
+  html, body, #app, .page-wrapper .container-fluid {                   
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+  }
+
+  header {
+    height: calc(100vh - 4rem); 
+    transition: width 0.3s;
+  }
+
+  .page-wrapper .container-fluid {
+    @apply pr-[5px];
+    max-width: 100%;
+  }
+}
+
+/* Custom styles within the components layer */
+@layer components {
+  .page-main-header {
+    @apply fixed top-0 z-10 w-full text-lg bg-[var(--bg-color-1)] text-[var(--bg-text-1)] shadow-sm;
+  }
+
+  .page-body-wrapper {
+    @apply flex lg:mt-5;
+  }
+
+  .page-wrapper{
+    @apply bg-[var(--bg-primary-main)] text-[var(--bg-text-1)] ;
+  }
+
+  .main-nav {
+    @apply fixed w-full top-16 h-[calc(100vh-4rem)] lg:top-20;
+    z-index: 8;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-visible {
+    @apply w-60 lg:w-48 ease-in;
+    transition-duration: 0.3s;
+  }
+
+  .nav-hide {
+    @apply w-0;
+  }
+
+  .page-body {
+    @apply flex-1 py-4 pl-4 mt-14 overflow-y-auto overflow-x-hidden transition-all ease-in-out;
+    transition-duration: 0.3s;
+  }
+
+  .page-body-sidebar-visible {
+    @apply ml-60 lg:ml-52 ease-in;
+    transition-duration: 0.4s;
+  }
+
+  .page-body-sidebar-hide {
+    @apply ml-0 ease-out;
+  }
+
+  .container-fluid {
+    @apply relative rounded-md max-w-full min-w-full mx-auto;
+  }
+
+  .content-header{
+    @apply w-full;
+  }
+
+  .p-breadcrumb{
+    @apply bg-[var(--bg-color-1)] text-[var(--bg-text-1)];
+  }
+
+  .p-menuitem-text,.p-menuitem-icon,.p-menuitem-separator{
+    @apply  text-[var(--bg-text-1)];
+  }
+
+  /* Sidebar layout */ 
+
+  .sidebar {
+    @apply relative bg-[var(--bg-color-1)] text-[var(--bg-text-1)]  overflow-y-auto top-[11px] left-0 h-[calc(100%-30px)] w-[217px] z-10;
+  }
+
+  .sidebar::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 10px;
+    border: 2px solid var(--bg-color-1);
+  }
+  
+  .sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-color-1) var(--scrollbar-track);
+  }
+
+    /* Topbar layout */ 
+
+  .toggle-button {
+    @apply bg-transparent border-none cursor-pointer text-2xl;
+  }
+  
+  .top-bar{
+    @apply bg-[var(--bg-color-1)] text-[var(--bg-text-1)] ;
+  }
+
+  .p-menubar,.p-menuitem-content,.p-menu,.p-submenu-header	
+  {
+    @apply bg-[var(--bg-color-1)] text-[var(--bg-text-1)];
+  }
+
+  /* Setting layout */ 
+
+  .p-dialog,.p-dialog-header,.p-dialog-content,.p-select-button{
+    @apply bg-[var(--bg-color-1)] text-[var(--bg-text-1)];
+  }
+
+  .p-select-button,.p-dialog .p-button{
+    @apply bg-[var(--button-bg-1)] text-[var(--button-text-1)] text-sm;
+  }
+
+  .p-dialog .p-highlight::before{
+    @apply bg-[var(--button-bg-1)] text-[var(--button-text-2)] text-sm
+  }
+
+}
